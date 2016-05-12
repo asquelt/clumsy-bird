@@ -1,6 +1,7 @@
 body {
-  background-color: #0099cc;
-  color: #fff;
+  /* background-color: #0099cc; */
+  background-color: #fff;
+  color: #000;
 
   /* Allow mouse dragging. */
   -moz-user-select: none;
