@@ -78,8 +78,8 @@ game.GameOverScreen = me.ScreenObject.extend({
                 // renderable
                 this._super(me.Renderable, 'init', [0, 0, 100, 100]);
                 this.font = new me.Font('gamefont', 40, 'black', 'left');
-                this.steps = 'Steps: ' + game.data.steps.toString();
-                this.topSteps= 'Higher Step: ' + me.save.topSteps.toString();
+                this.steps = 'Wynik: ' + game.data.steps.toString();
+                this.topSteps= 'Najlepszy: ' + me.save.topSteps.toString();
             },
 
             draw: function (renderer) {

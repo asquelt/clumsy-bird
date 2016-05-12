@@ -84,18 +84,18 @@ var Share = me.GUI_Object.extend({
     },
 
     onClick: function(event) {
-        var shareText = 'Just made ' + game.data.steps + ' steps on Clumsy Bird! Can you beat me? Try online here!';
-        var url = 'http://ellisonleao.github.io/clumsy-bird/';
+        var shareText = 'Mam wynik ' + game.data.steps + ' bramek w Miętus Fruwacz! Spróbuj mnie pokonać!';
+        var url = 'http://asquelt.github.io/clumsy-bird/';
         FB.ui(
             {
              method: 'feed',
-             name: 'My Clumsy Bird Score!',
-             caption: "Share to your friends",
+             name: 'Mój wynik w Miętus Fruwacz!',
+             caption: "Podziel się ze znajomymi",
              description: (
                     shareText
              ),
              link: url,
-             picture: 'http://ellisonleao.github.io/clumsy-bird/data/img/clumsy.png'
+             picture: 'http://asquelt.github.io/clumsy-bird/data/img/clumsy.png'
             }
         );
         return false;
@@ -113,10 +113,10 @@ var Tweet = me.GUI_Object.extend({
     },
 
     onClick: function(event) {
-        var shareText = 'Just made ' + game.data.steps + ' steps on Clumsy Bird! Can you beat me? Try online here!';
-        var url = 'http://ellisonleao.github.io/clumsy-bird/';
-        var hashtags = 'clumsybird,melonjs'
-        window.open('https://twitter.com/intent/tweet?text=' + shareText + '&hashtags=' + hashtags + '&count=' + url + '&url=' + url, 'Tweet!', 'height=300,width=400')
+        var shareText = 'Mam wynik ' + game.data.steps + ' bramek w Miętus Fruwacz! Spróbuj mnie pokonać!';
+        var url = 'http://asquelt.github.io/clumsy-bird/';
+        var hashtags = 'mietusfruwacz,melonjs'
+        window.open('https://twitter.com/intent/tweet?text=' + shareText + '&hashtags=' + hashtags + '&count=' + url + '&url=' + url, 'Twituj!', 'height=300,width=400')
         return false;
     }
 
